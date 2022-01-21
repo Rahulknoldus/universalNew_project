@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img</name>
+   <tag></tag>
+   <elementGuidId>5501a1d1-4259-4c3d-9385-3d3c4d388eb8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//img[@alt='UserLevel'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.icon-header.user-level-icon.ng-star-inserted > img[alt=&quot;UserLevel&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>UserLevel</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://platform3-portalv3-production.s3-us-west-2.amazonaws.com/uniallaccess/assets/common/perks/perk-1-icon.png</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;pace-done&quot;]/app-root[1]/app-header[1]/header[@class=&quot;home loding-header nav-abs custom-scroll&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col logo-col&quot;]/nav[1]/app-account-menu[1]/div[@class=&quot;top-header-right-logged ng-star-inserted&quot;]/ul[@class=&quot;account-button-logged&quot;]/li[@class=&quot;account-menu&quot;]/div[@class=&quot;d-flex&quot;]/a[@class=&quot;icon-header user-level-icon ng-star-inserted&quot;]/img[1]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='UserLevel'])[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]/img</value>
+   </webElementXpaths>
+</WebElementEntity>
