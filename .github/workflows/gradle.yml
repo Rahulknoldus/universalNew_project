@@ -26,9 +26,9 @@ jobs:
       uses: katalon-studio/katalon-studio-github-action@1.2
       with:
           version: '7.5.5'
-          projectPath: '/home/runner/work/universalNew_project/universalNew_project'
+          projectPath: /home/runner/work/universalNew_project/universalNew_project
           ks_api_Key: '69710eed-6916-4cd6-8f9c-5006f54a8632'
-          args: ' -noSplash -runMode=console  -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012" -apiKey="69710eed-6916-4cd6-8f9c-5006f54a8632" --config -webui.autoUpdateDrivers=true'  
+          args: ' -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012" --config -webui.autoUpdateDrivers=true'  
     - name: Build with Gradle
       uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
       with:
