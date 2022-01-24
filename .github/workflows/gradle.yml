@@ -23,9 +23,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Katalon Studio Github Action
-      uses: katalon-studio/katalon-studio-github-action@1.2
+      uses: katalon-studio/katalon-studio-github-action@v2
       with:
-          version: '7.5.5'
           projectPath: /home/runner/work/universalNew_project/universalNew_project
           ks_api_Key: '69710eed-6916-4cd6-8f9c-5006f54a8632'
           args: ' -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012" --config -webui.autoUpdateDrivers=true'  
