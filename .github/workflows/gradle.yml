@@ -21,7 +21,7 @@ jobs:
     steps:
    
     - name: Checkout
-      uses: actions/checkout@v2.1
+      uses: actions/checkout@v2.286.1
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@0.9
       with:
