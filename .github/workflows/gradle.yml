@@ -34,12 +34,7 @@ jobs:
           ks_api_key: '${{ secrets.SECRETS_API_KEY }}'
           projectPath: '${{ secrets.WORKSPACE }}'
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
+          run: 'echo  projectPath'
+          
     
-    - name: Set up secret file
-      env:
-        DEBUG_POROJECTPATH: ${{ secrets. WORKSPACE}}
-        DEBUG_SECRET_KEY: ${{ secrets.SECRETS_API_KEY }}
-      run: |
-        echo $DEBUG_PROJECTPATH >> secrets.txt
-        echo $DEBUG_SECRET_KEY >> secrets.txt
     
