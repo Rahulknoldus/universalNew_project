@@ -33,7 +33,7 @@ jobs:
           version: '8.2.0'
           ks_api_key: '${{ secrets.SECRETS_API_KEY }}'
           projectPath: '${{ secrets.WORKSPACE }}'
-          args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash  -projectPath= ${{ secrets.WORKSPACE }} -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
     
     - name: Build with Gradle
       uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
