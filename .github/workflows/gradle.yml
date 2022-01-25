@@ -36,5 +36,6 @@ jobs:
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
           run: 'echo  projectPath'
           
-    
+    - name: Run tmate
+      uses: mxschmitt/action-tmate@v2
     
