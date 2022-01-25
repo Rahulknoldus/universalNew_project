@@ -34,8 +34,6 @@ jobs:
           ks_api_key: '${{ secrets.SECRETS_API_KEY }}'
           projectPath: '${{ secrets.WORKSPACE }}'
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
-          run: 'echo  projectPath'
+          run: gpg --symmetric --cipher-algo AES256 my_secret.json
           
-    - name: Run tmate
-      uses: mxschmitt/action-tmate@v2
     
