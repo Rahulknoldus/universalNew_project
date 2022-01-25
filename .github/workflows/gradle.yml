@@ -32,7 +32,7 @@ jobs:
       with:
           version: '8.2.0'
           ks_api_key: '${{ secrets.SECRETS_API_KEY }}'
-          projectPath: '${{ secrets.PROJECTPATH }}'
+          projectPath: '${{ github.WORKSPACE }}'
           args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  --config -webui.autoUpdateDrivers=true'
     
     - name: Build with Gradle
