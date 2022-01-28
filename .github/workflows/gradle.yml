@@ -35,7 +35,5 @@ jobs:
           projectPath: '${{ secrets.WORKSPACE }}'
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
 
-    - name: Print the input tag to STDOUT
-      run: echo  The tag is ${{secrets.WORKSPACE  }} 
         
     
