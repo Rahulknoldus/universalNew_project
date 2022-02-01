@@ -42,4 +42,4 @@ jobs:
           PASSWORD: ${{ secrets.TESTOPS_PASSWORD }}
           PROJECT_ID: 390033
           TYPE: junit
-          REPORT_PATH: ${{ github.WORKSPACE }}
+          REPORT_PATH: ${{ github.WORKSPACE }}/file
