@@ -35,5 +35,10 @@ jobs:
           projectPath: '${{ secrets.WORKSPACE }}'
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
 
-        
+    - name: Storing report
+      uses: actions/upload-artifact@v2
+      with:
+          name: summary
+          path: summary.html
+          retention-days: 2     
     
