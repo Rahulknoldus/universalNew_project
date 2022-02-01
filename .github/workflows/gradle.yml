@@ -35,9 +35,5 @@ jobs:
           projectPath: '${{ secrets.WORKSPACE }}'
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: katalon-report-uploader
-        path: target/*.jar     
-    
+    - name: Katalon Report Uploader
+      uses: katalon-studio/report-uploader@v0.0.8
