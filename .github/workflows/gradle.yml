@@ -37,3 +37,9 @@ jobs:
 
     - name: Katalon Report Uploader
       uses: katalon-studio/report-uploader@v0.0.8
+      env:
+          EMAIL: ${{ secrets.TESTOPS_EMAIL }}
+          PASSWORD: ${{ secrets.TESTOPS_PASSWORD }}
+          PROJECT_ID: 390033
+          TYPE: junit
+          REPORT_PATH: ${{ github.WORKSPACE }}/junit-report-sample
