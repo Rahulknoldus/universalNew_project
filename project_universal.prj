@@ -6,6 +6,7 @@
    <UUID>3064333a-6eb0-4d70-bd97-1bd442ce0fb5</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/home/knoldus/Katalon Studio/universalNew_project/project_universal.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
