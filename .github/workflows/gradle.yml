@@ -25,6 +25,7 @@ jobs:
       with:
         java-version: '8'
         distribution: 'temurin'
+        
     - name: Checkout
       uses: actions/checkout@v2
     - name: Katalon Studio Github Action
@@ -34,10 +35,12 @@ jobs:
           ks_api_key: '${{ secrets.SECRETS_API_KEY }}'
           projectPath: '${{ secrets.WORKSPACE }}'
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
+    
+    
     - name: Upload html report for job 1
       uses: actions/upload-artifact@v2
       with:
-        name: JUnit_Report.xml
-        path: Reports
-        retention-days: 2
+         name: JUnit_Report.xml
+         path: Reports
+         retention-days: 2
   
