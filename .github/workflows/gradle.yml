@@ -41,4 +41,4 @@ jobs:
       PASSWORD: '${{ secrets.SECRETS_API_KEY }}'
       PROJECT_ID: 390033
       TYPE: junit
-      REPORT_PATH: '${{ secrets.WORKSPACE }}/file'
+      REPORT_PATH: '${{ secrets.WORKSPACE }}/file.xml'
