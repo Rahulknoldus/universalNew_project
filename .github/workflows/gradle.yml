@@ -40,4 +40,4 @@ jobs:
       with:
        name: Katalon Report Uploader
        uses: katalon-studio/report-uploader@v0.0.8
-       path: target/*.jar
+       path: .gitignore/report*.jar
