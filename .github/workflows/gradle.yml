@@ -39,5 +39,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
        name: Katalon Report Uploader
-       uses: katalon-studio/report-uploader@v0.0.8
-       path: .gitignore/report*.jar
+       path: .gitignore/report
+      
+    - name: katalon-report-uploader
+    - uses: katalon-studio/report-uploader@v0.0.8
