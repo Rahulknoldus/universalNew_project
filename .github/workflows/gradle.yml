@@ -34,12 +34,10 @@ jobs:
           ks_api_key: '${{ secrets.SECRETS_API_KEY }}'
           projectPath: '${{ secrets.WORKSPACE }}'
           args: ' -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection012"  -apiKey= ${{ secrets.SECRETS_API_KEY }}   --config -webui.autoUpdateDrivers=true'
-
-    - name: Katalon Report Uploader
-      uses: katalon-studio/report-uploader@v0.0.8
-      env:
-          EMAIL: ${{ secrets.TESTOPS_EMAIL }}
-          PASSWORD: ${{ secrets.TESTOPS_PASSWORD }}
-          PROJECT_ID: 390033
-          TYPE: junit
-          REPORT_PATH: ${{ github.WORKSPACE }}/file
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+       name: Katalon Report Uploader
+       uses: katalon-studio/report-uploader@v0.0.8
+       path: target/*.jar
