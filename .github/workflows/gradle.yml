@@ -40,7 +40,7 @@ jobs:
     - name: Upload html report for job 1
       uses: actions/upload-artifact@v2
       with:
-         name: JUnit_Report.xml
-         path: Reports
-         retention-days: 2
+       name: JUnit_Report.xml
+       path: Reports
+       retention-days: 2
   
